@@ -30,7 +30,7 @@
             </p>
           </button>
         </div>
-        <div class="md:w-1/2 lg:relative absolute mt-12">
+        <div class="lg:relative absolute lg:mt-5 mt-24 lg:w-auto w-full lg:px-0 lg:ml-0  px-3">
           <div class="aspect-w-16 aspect-h-9">
             <img src="../../assets/Group 5.png" alt="Why Join Us" class="w-full h-full object-cover" />
           </div>

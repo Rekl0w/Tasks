@@ -12,8 +12,8 @@ import Footer from "./components/Footer/Footer.vue";
 
 
 <template>
-  <div class="bg-[#fefbea]">
-    <Topbar class="fixed z-50" />
+  <div class="bg-[#fefbea]  overflow-x-hidden">
+    <Topbar/>
     <Banner/>
     <ProductShowcase />
     <JoinUsSection />
