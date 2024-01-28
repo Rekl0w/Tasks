@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="relative text-white sm:px-6 lg:px-0 lg:pt-24 pt-16 px-12 w-full" style="font-family: 'Roboto', sans-serif;">
+  <div :style=" !isMobile ? { backgroundImage: 'url(/src/assets/rectangle.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'10px 100px' } : { backgroundImage: 'url(/src/assets/rectangle.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }">
+    <div class="relative text-white sm:px-6 lg:px-0 lg:pt-24 pt-16 px-12 w-full" style="font-family: 'Roboto', sans-serif;" >
       <div class="flex flex-col justify-center items-center pt-12 gap-8 sm:flex-row sm:gap-32 lg:px-48">
         <div class="w-full z-40">
           <h1 class="text-5xl lg:text-7xl lg:text-start text-center font-extrabold tracking-wide lg:font-[68px]" style="color: #0F172A;">
@@ -23,7 +23,7 @@
       </div>
       <Feature class="relative z-40 lg:px-44" />
       <div class="absolute bottom-0 right-0 z-0">
-        <img src="../../assets/Rectangle 31.png" alt="Decorative Element" />
+        
       </div>
     </div>
   </div>
@@ -31,8 +31,28 @@
 
 <script setup>
 import Feature from '../Feature/Feature.vue';
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isMobile = ref(false)
+
+const checkIfMobile = () => {
+  if (window.innerWidth <= 768) {
+    isMobile.value = true
+  } else {
+    isMobile.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', checkIfMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkIfMobile)
+})
+
+checkIfMobile()
 </script>
 
 <style scoped>
-
 </style>

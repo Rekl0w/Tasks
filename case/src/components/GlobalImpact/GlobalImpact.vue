@@ -8,6 +8,7 @@
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }"
+    style="font-family: 'Roboto', sans-serif;"
   >
     <div
       class="absolute top-0 left-0 right-0 bottom-0"

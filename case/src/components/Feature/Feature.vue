@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 text-[#0F172A] w-full">
+  <div class="py-12 text-[#0F172A] w-full" style="font-family: 'Roboto', sans-serif;">
     <div class="flex flex-col md:flex-row lg:gap-36 gap-16 items-center justify-center mx-auto ">
       <div class="lg:text-start lg:items-start flex-col flex items-center text-center lg:mb-6">
         <img src="../../assets/trophy.png" alt="Icon 1" class="mb-4">

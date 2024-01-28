@@ -12,7 +12,7 @@
         </button>
       </div>
       <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-4">
-        <div class="max-w-sm shadow-2xl shadow-white rounded-lg">
+        <div class="max-w-sm shadow-2xl shadow-slate-500 rounded-lg">
           <div class="bg-[#0F172A] rounded-lg h-[450px] flex flex-col items-center justify-between">
             <img
               src="../../assets/shoe1.png"
@@ -30,7 +30,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm shadow-2xl shadow-white rounded-lg">
+        <div class="max-w-sm shadow-2xl shadow-slate-500 rounded-lg">
           <div class="bg-[#0F172A] rounded-lg h-[450px] flex flex-col items-center justify-between">
             <img
               src="../../assets/shoe2.png"
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm shadow-2xl shadow-white rounded-lg">
+        <div class="max-w-sm shadow-2xl shadow-slate-500 rounded-lg">
           <div class="bg-[#0F172A] rounded-lg h-[450px] flex flex-col items-center justify-between">
             <img
               src="../../assets/shoe3.png"
@@ -71,6 +71,7 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>

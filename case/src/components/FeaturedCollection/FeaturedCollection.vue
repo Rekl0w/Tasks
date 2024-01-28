@@ -22,38 +22,38 @@
         <button
           class="flex items-center gap-5 lg:px-4 lg:pl-2 flex-shrink-0 pr-4 mb-6 pl-2 bg-white py-2 lg:w-64 rounded-lg shadow-lg lg:mr-0 mr-8"
         >
-          <img src="/src/assets/Group 53.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/glass.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Bibendum Tellus</p>
-          <img src="/src/assets/Group 54.png" alt="">
+          <img src="/src/assets/arrow.png" alt="">
         </button>
         <button
           class="flex items-center lg:pl-2 flex-shrink-0 pr-4 gap-5 mb-6 px-4 py-2 lg:mr-0 mr-8 rounded-lg"
         >
-          <img src="/src/assets/Group 66.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/shield.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Cras eget</p>
         </button>
         <button
           class="flex items-center lg:pl-2 flex-shrink-0 pr-4 gap-5 mb-6 px-4 py-2 lg:mr-0 mr-8 rounded-lg "
         >
-          <img src="/src/assets/Group 67.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/rocket.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Dolor pharetra</p>
         </button>
         <button
           class="flex items-center lg:pl-2 flex-shrink-0 pr-4 gap-5 mb-6 px-4 py-2 lg:mr-0 mr-8 rounded-lg"
         >
-          <img src="/src/assets/Group 68.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/monitor.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Amet, fringilla</p>
         </button>
         <button
           class="flex items-center lg:pl-2 flex-shrink-0 pr-4 gap-5 mb-6 px-4 py-2 lg:mr-0 mr-8 rounded-lg"
         >
-          <img src="/src/assets/Group 69.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/wpa.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Amet nibh</p>
         </button>
         <button
           class="flex items-center lg:pl-2 flex-shrink-0 pr-4 gap-5 mb-6 px-4 py-2 lg:mr-0 mr-8 rounded-lg"
         >
-          <img src="/src/assets/Group 70.png" alt="Icon" class="h-6 mr-2" />
+          <img src="/src/assets/adjust.png" alt="Icon" class="h-6 mr-2" />
           <p class="font-semibold">Sed velit</p>
         </button>
       </div>

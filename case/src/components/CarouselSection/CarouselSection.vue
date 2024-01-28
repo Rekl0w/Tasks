@@ -3,8 +3,8 @@
     class="glide relative overflow-visible z-10 w-full"
     style="font-family: 'Roboto', sans-serif"
   >
-    <div class="flex lg:mb-8 mb-24">
-      <h1 class="lg:text-6xl text-3xl lg:text-start text-center lg:pl-20 ml-14 font-semibold text-[#0F172A] z-40 flex-shrink-0">
+    <div class="flex lg:mb-8 mb-16">
+      <h1 class="lg:text-6xl text-4xl lg:text-start text-center lg:pl-20 lg:ml-14 ml-8 font-semibold text-[#0F172A] z-40 lg:mt-0 mt-6 flex-shrink-0">
         Because they love us
       </h1>
       <div
