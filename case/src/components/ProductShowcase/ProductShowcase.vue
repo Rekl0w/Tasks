@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#0F172A] py-16 w-full" style="font-family: 'Roboto', sans-serif;">
-    <div class="container mx-auto" :style="{ backgroundImage: 'url(/src/assets/squares.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }" >
+    <div class="container mx-auto" :style="isMobile ? { backgroundImage: 'url(/src/assets/squares-responsive.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } : { backgroundImage: 'url(/src/assets/squares.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }" >
       <div class="flex flex-col md:flex-row justify-between lg:items-start items-center">
         <h2 class="text-white lg:text-6xl lg:mb-20 lg:ml-14 text-4xl font-semibold mb-12">
           The best of the best
@@ -71,7 +71,27 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
+const isMobile = ref(false)
+
+const checkIfMobile = () => {
+  if (window.innerWidth <= 768) {
+    isMobile.value = true
+  } else {
+    isMobile.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', checkIfMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkIfMobile)
+})
+
+checkIfMobile()
 </script>
 
 <style scoped>
