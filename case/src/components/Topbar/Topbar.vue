@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between bg-transparent py-5 px-6 lg:px-48">
+  <nav class="flex items-center justify-between  py-5 px-6 lg:px-48 bg-[#fefbea] w-full">
     <h1 class="text-4xl lg:text-5xl font-semibold text-[#78350F]">Collers</h1>
 
     <button class="lg:hidden" @click="toggleMenu">

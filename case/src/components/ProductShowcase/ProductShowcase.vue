@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-[#0F172A] py-16" style="font-family: 'Roboto', sans-serif;">
+  <div class="bg-[#0F172A] py-16 w-full" style="font-family: 'Roboto', sans-serif;">
     <div class="container mx-auto" :style="{ backgroundImage: 'url(/src/assets/squares.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }" >
-      <div class="flex flex-col md:flex-row justify-between">
-        <h2 class="text-white lg:text-6xl lg:mb-20 text-4xl font-semibold mb-12 ml-16">
+      <div class="flex flex-col md:flex-row justify-between lg:items-start items-center">
+        <h2 class="text-white lg:text-6xl lg:mb-20 text-4xl font-semibold mb-12">
           The best of the best
         </h2>
-        <button class="text-white flex items-center justify-center text-center border-2 lg:ml-0 lg:mb-0 ml-24 mb-12 lg:w-auto border-white w-7/12 h-16 rounded-lg mr-16 ">
-          <p class="text-2xl font-semibold p-12">
+        <button class="text-white flex items-center justify-center text-center border-2 lg:ml-0 lg:mb-0 ml-2 lg:w-auto border-white w-7/12 h-16 rounded-lg lg:mr-16 mb-12 ">
+          <p class="text-2xl font-semibold p-12 flex-shrink-0">
             Sign Up Now
           </p>
         </button>

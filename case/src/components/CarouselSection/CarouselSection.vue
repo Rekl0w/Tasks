@@ -1,15 +1,16 @@
 <template>
     <div
-    class="glide relative overflow-visible z-10"
+    class="glide relative overflow-visible z-10 w-full"
     style="font-family: 'Roboto', sans-serif"
   >
     <div class="flex mb-8">
-      <h1 class="text-6xl w-full font-bold ml-36 text-[#0F172A]">
+      <h1 class="lg:text-6xl text-3xl text-center w-full font-semibold text-[#0F172A] z-40 flex-shrink-0">
         Because they love us
       </h1>
       <div
-        class="glide__arrows w-full flex justify-end px-36 mb-12 gap-5"
+        class="glide__arrows w-full flex justify-end lg:px-36 mb-12 gap-5"
         data-glide-el="controls"
+        v-if="!isMobile"
       >
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
           <img src="../../assets/left.png" alt="" />
@@ -19,7 +20,7 @@
         </button>
       </div>
     </div>
-    <div class="absolute left-20 h-4/6 w-11/12 top-24 bg-yellow-200"></div>
+    <div class="absolute lg:left-20 w-full h-4/6 lg:w-11/12 top-24 bg-yellow-200"></div>
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
         <li class="glide__slide mb-16">
@@ -28,7 +29,7 @@
           >
             <img class="p-8" src="../../assets/brand1.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 text-2xl">
+              <p class="text-gray-600 lg:text-2xl text-lg">
                 Non risus viverra enim, quis. Eget vitae arcu vivamus sit
                 tellus, viverra turpis lorem. Varius a turpis urna id
                 porttitor.
@@ -57,7 +58,7 @@
           >
             <img class="p-8" src="../../assets/brand2.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 text-2xl">
+              <p class="text-gray-600 lg:text-2xl text-lg">
                 Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam.
               </p>
             </blockquote>
@@ -84,7 +85,7 @@
           >
             <img class="p-8" src="../../assets/brand3.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 text-2xl">
+              <p class="text-gray-600 lg:text-2xl text-lg">
                 A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo.
               </p>
             </blockquote>
@@ -111,7 +112,7 @@
           >
             <img class="p-8" src="../../assets/brand4.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 text-2xl">
+              <p class="text-gray-600 lg:text-2xl text-lg">
                 Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.
               </p>
             </blockquote>
@@ -141,6 +142,8 @@
 import Glide from "@glidejs/glide";
 import { onMounted } from "vue";
 
+const isMobile = window.innerWidth < 768;
+
 onMounted(() => {
   new Glide(".glide", {
     type: "carousel",
@@ -159,10 +162,16 @@ onMounted(() => {
       },
       768: {
         perView: 1,
+        peek: {
+          before: 70,
+          after: 70,
+        }
       },
     },
   }).mount();
 });
+
+
 </script>
 
 <style scoped>

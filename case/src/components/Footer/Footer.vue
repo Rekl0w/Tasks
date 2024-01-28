@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#0B1120] text-white py-12 px-4" style="font-family: 'Roboto', sans-serif;">
+  <footer class="bg-[#0B1120] text-white py-12 px-4 w-full" style="font-family: 'Roboto', sans-serif;">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
       <div>
         <h5 class="text-xl font-bold mb-4">Product</h5>

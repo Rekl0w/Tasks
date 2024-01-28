@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden" style="font-family: 'Roboto', sans-serif;">
+  <section class="relative overflow-hidden w-full" style="font-family: 'Roboto', sans-serif;">
     <img
       class="absolute w-full h-full object-cover z-[0]"
       src="/src/assets/Waves.png"

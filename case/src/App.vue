@@ -13,7 +13,8 @@ import Footer from "./components/Footer/Footer.vue";
 
 <template>
   <div class="bg-[#fefbea]">
-    <Banner />
+    <Topbar class="fixed z-50" />
+    <Banner/>
     <ProductShowcase />
     <JoinUsSection />
     <CarouselSection />
@@ -23,4 +24,6 @@ import Footer from "./components/Footer/Footer.vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  
+</style>
