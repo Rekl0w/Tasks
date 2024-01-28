@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#0F172A] py-16 w-full" style="font-family: 'Roboto', sans-serif;">
-    <div class="container mx-auto" :style="isMobile ? { backgroundImage: 'url(/src/assets/squares-responsive.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } : { backgroundImage: 'url(/src/assets/squares.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }" >
+    <div class="container mx-auto" :style="isMobile ? { backgroundImage: 'url(/src/assets/squares-responsive.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } : { backgroundImage: 'url(/src/assets/squares.png)', backgroundPosition: 'top', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'10px 100px' }" >
       <div class="flex flex-col md:flex-row justify-between lg:items-start items-center">
         <h2 class="text-white lg:text-6xl lg:mb-20 lg:ml-14 text-4xl font-semibold mb-12">
           The best of the best
@@ -11,7 +11,7 @@
           </p>
         </button>
       </div>
-      <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-4">
+      <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-4 lg:gap-0 gap-10">
         <div class="max-w-sm shadow-2xl shadow-slate-500 rounded-lg">
           <div class="bg-[#0F172A] rounded-lg h-[450px] flex flex-col items-center justify-between">
             <img
