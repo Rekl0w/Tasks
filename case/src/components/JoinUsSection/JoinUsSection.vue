@@ -2,7 +2,7 @@
   <div class="flex justify-center items-center w-full" style="font-family: 'Roboto', sans-serif;">
     <div class="bg-white lg:h-[430px] h-[660px] w-10/12 lg:my-40 my-20 rounded-3xl shadow-lg flex">
       <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center md:justify-between">
-        <div class="md:w-1/2 a justify-center items-center pl-16">
+        <div class="md:w-1/2 w-full justify-center items-center lg:pl-16 px-0 lg:text-start text-center">
           <h2 class="lg:text-6xl text-4xl font-bold mb-8">Why join us</h2>
           <ul class="text-lg space-y-2 mb-8">
             <li class="flex lg:items-center text-start">
@@ -31,7 +31,7 @@
           </button>
         </div>
         <div class="lg:relative absolute lg:mt-5 mt-24 lg:w-auto w-full lg:px-0 lg:ml-0  px-3">
-          <div class="aspect-w-16 aspect-h-9">
+          <div class="aspect-w-16 aspect-h-9 lg:pt-0 pt-[56.25%]">
             <img  :src="!isMobile ? '/src/assets/screen.png' : '/src/assets/responsive-screen.png'" alt="Why Join Us" class="w-full h-full object-cover" />
           </div>
         </div>
@@ -65,20 +65,5 @@ checkIfMobile()
 </script>
 
 <style scoped>
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  .a {
-    width: 100%;
-  }
-  .pl-16 {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-  .aspect-w-16 {
-    padding-top: 56.25%;
-  }
-}
+
 </style>
