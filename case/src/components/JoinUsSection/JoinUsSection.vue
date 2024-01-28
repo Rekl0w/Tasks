@@ -32,7 +32,7 @@
         </div>
         <div class="lg:relative absolute lg:mt-5 mt-24 lg:w-auto w-full lg:px-0 lg:ml-0  px-3">
           <div class="aspect-w-16 aspect-h-9">
-            <img  :src="isMobile ? '/src/assets/screen.png' : '/src/assets/responsive-screen.png'" alt="Why Join Us" class="w-full h-full object-cover" />
+            <img  :src="!isMobile ? '/src/assets/screen.png' : '/src/assets/responsive-screen.png'" alt="Why Join Us" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -41,6 +41,27 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isMobile = ref(false)
+
+const checkIfMobile = () => {
+  if (window.innerWidth <= 768) {
+    isMobile.value = true
+  } else {
+    isMobile.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', checkIfMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkIfMobile)
+})
+
+checkIfMobile()
 </script>
 
 <style scoped>
