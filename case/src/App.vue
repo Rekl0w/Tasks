@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer.vue";
 
 
 <template>
-  <div class="bg-[#fefbea]  overflow-x-hidden">
+  <div class="bg-[#fefbea] overflow-x-hidden">
     <Topbar/>
     <Banner/>
     <ProductShowcase />
