@@ -1,14 +1,14 @@
-# Shoe & Quiz Apps Repository
+# Collers & Quiz App Repository
 
 This repository contains two different applications: a Static Shoe Website built with Vue.js and Tailwind CSS, and a Quiz Application built with React and Tailwind CSS.
 
-## Static Shoe Website with Vue.js and Tailwind CSS
+## Collers Shoe Website with Vue.js and Tailwind CSS
 
 ![Collers Screenshot](./case/img/home.png)
 
 This application is a website showcasing various shoe models. It has been developed using Vue.js and Tailwind CSS, providing a responsive design.
 
-- [README file for the Static Shoe Website](./case/README.md)
+- [README file for the Collers Shoe Website](./case/README.md)
 
 ## Quiz Application with React and Tailwind CSS
 
