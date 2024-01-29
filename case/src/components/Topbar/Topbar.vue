@@ -10,22 +10,22 @@
       </button>
 
     <div class="hidden lg:flex items-center space-x-4">
-      <button class="text-base lg:text-lg lg:font-semibold text-[#78350F] hover:text-gray-600">Products</button>
-      <button class="text-base lg:text-lg lg:font-semibold text-[#78350F] hover:text-gray-600">Solutions</button>
-      <button class="text-base lg:text-lg lg:font-semibold text-[#78350F] hover:text-gray-600">Pricing</button>
-      <button class="text-base lg:text-lg lg:font-semibold text-[#78350F] hover:text-gray-600">Resources</button>
-      <button class="text-base lg:text-lg lg:font-semibold text-[#78350F] hover:text-gray-600">Log In</button>
+      <button class="text-base lg:text-lg lg:font-medium text-[#78350F] hover:text-gray-600">Products</button>
+      <button class="text-base lg:text-lg lg:font-medium text-[#78350F] hover:text-gray-600">Solutions</button>
+      <button class="text-base lg:text-lg lg:font-medium text-[#78350F] hover:text-gray-600">Pricing</button>
+      <button class="text-base lg:text-lg lg:font-medium text-[#78350F] hover:text-gray-600">Resources</button>
+      <button class="text-base lg:text-lg lg:font-medium text-[#78350F] hover:text-gray-600">Log In</button>
       <button class="text-[#78350F] lg:text-lg lg:font-semibold border-[#78350F] hover:bg-[#78350F] hover:text-white border-2 font-bold py-2 px-6 rounded-lg">
         Sign up now
       </button>
     </div>
 
     <div v-if="menuOpen" class="lg:hidden absolute top-full left-0 right-0 rounded-lg mt-2 bg-white shadow-md p-4">
-      <button class="block text-lg font-semibold text-[#78350F] hover:text-gray-600 px-4 py-3">Solutions</button>
-      <button class="block text-lg font-semibold text-[#78350F] hover:text-gray-600 px-4 py-3">Pricing</button>
-      <button class="block text-lg font-semibold text-[#78350F] hover:text-gray-600 px-4 py-3">Resources</button>
-      <button class="block text-lg font-semibold text-[#78350F] hover:text-gray-600 px-4 py-3">Log In</button>
-      <button class="block text-lg font-semibold text-[#78350F] hover:text-gray-600 px-4 py-3">Products</button>
+      <button class="block text-lg font-medium text-[#78350F] hover:text-gray-600 px-4 py-3">Solutions</button>
+      <button class="block text-lg font-medium text-[#78350F] hover:text-gray-600 px-4 py-3">Pricing</button>
+      <button class="block text-lg font-medium text-[#78350F] hover:text-gray-600 px-4 py-3">Resources</button>
+      <button class="block text-lg font-medium text-[#78350F] hover:text-gray-600 px-4 py-3">Log In</button>
+      <button class="block text-lg font-medium text-[#78350F] hover:text-gray-600 px-4 py-3">Products</button>
       <button class="block w-full text-lg text-[#78350F] border-[#78350F] border-2 hover:bg-[#78350F] hover:text-white font-bold py-2 mt-4 px-6 rounded-lg text-center">
         Sign up now
       </button>
