@@ -1,0 +1,31 @@
+.card-shine-effect {
+  --shine-deg: 45deg;
+  position: relative;
+  border-radius: 0.875rem;
+  border: 1px solid rgb(15 23 42);
+  background-color: rgb(9 9 11);
+  padding: 4rem 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: -100% 0, 0 0;
+
+  background-image: linear-gradient(
+    var(--shine-deg),
+    transparent 20%,
+    transparent 40%,
+    rgb(68, 68, 68, 0.6) 50%,
+    rgb(68, 68, 68, 0.6) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+
+  background-size: 200% 200%, 100% 100%;
+  transition: background-position 0s ease;
+}
+
+.card-shine-effect:hover {
+  background-position: 200% 0, 0 0;
+  transition-duration: 1.5s;
+}
+
+
