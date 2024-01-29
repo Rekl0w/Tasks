@@ -1,7 +1,47 @@
-# Vue 3 + Vite
+# Collers 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Collers Screenshot](./img/home.png)
 
-## Recommended IDE Setup
+This application allows users to explore a static shoe website. The website showcases various shoe models and information. It has been developed using technologies such as Vue.js, Tailwind CSS, and Glide.js. Additionally, the application features a responsive design.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## How to Run?
+
+1. Download or clone the application:
+
+    ```
+    git clone https://github.com/Rekl0w/Tasks.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```
+    cd Tasks
+    cd case
+    ```
+
+3. Run the app.
+   ```
+    npm run dev
+    ```
+
+4. The Collers application will start.
+
+## Technologies Used
+
+- Vue
+- Javascript
+- Tailwind
+- Vite
+- Glide.js
+
+## Screenshots
+
+### Normal
+![Collers Screenshot](./img/normal.png)
+
+### Responsive
+![Collers Screenshot2](./img/responsive.png)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
