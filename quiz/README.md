@@ -19,12 +19,19 @@ This application allows users to solve a 10-question quiz test. Each question ha
     cd quiz
     ```
 
-3. Run the app.
-   ```
+3. Install dependencies:
+
+    ```
+    npm install
+    ```
+
+4. Run the app.
+
+    ```
     npm run dev
     ```
 
-4. The quiz application will start, and users can start answering the questions.
+5. The quiz application will start, and users can start answering the questions.
 
 ## Technologies Used
 

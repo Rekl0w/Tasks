@@ -19,12 +19,19 @@ This application allows users to explore a static shoe website. The website show
     cd case
     ```
 
-3. Run the app.
-   ```
+3. Install dependencies:
+
+    ```
+    npm install
+    ```
+
+4. Run the app.
+
+    ```
     npm run dev
     ```
 
-4. The Collers application will start.
+5. The Collers application will start.
 
 ## Technologies Used
 
