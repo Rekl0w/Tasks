@@ -28,7 +28,7 @@
             class="max-w-md h-96 mx-auto bg-white rounded-xl shadow-2xl overflow-hidden"
           >
             <img class="p-8" src="../../assets/brand1.png" alt="" />
-            <blockquote class="mt-4 px-8 mb-4">
+            <blockquote class="mt-4 px-8 lg:mb-4 -mb-4 ">
               <p class="text-gray-600 lg:text-2xl text-lg">
                 Non risus viverra enim, quis. Eget vitae arcu vivamus sit
                 tellus, viverra turpis lorem. Varius a turpis urna id
@@ -58,7 +58,7 @@
           >
             <img class="p-8" src="../../assets/brand2.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 lg:text-2xl text-lg">
+              <p class="text-gray-600 lg:text-2xl text-lg lg:mb-4 -mb-4">
                 Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam.
               </p>
             </blockquote>
@@ -85,7 +85,7 @@
           >
             <img class="p-8" src="../../assets/brand3.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 lg:text-2xl text-lg">
+              <p class="text-gray-600 lg:text-2xl text-lg lg:mb-4 -mb-4">
                 A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo.
               </p>
             </blockquote>
@@ -112,7 +112,7 @@
           >
             <img class="p-8" src="../../assets/brand4.png" alt="" />
             <blockquote class="mt-4 px-8 mb-4">
-              <p class="text-gray-600 lg:text-2xl text-lg">
+              <p class="text-gray-600 lg:text-2xl text-lg lg:mb-4 -mb-4">
                 Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.
               </p>
             </blockquote>
