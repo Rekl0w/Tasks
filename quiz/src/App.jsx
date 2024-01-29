@@ -8,15 +8,15 @@ function Quiz() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
-  const [showQuiz, setShowQuiz] = useState(false); // Quiz'in gösterilip gösterilmeyeceğini kontrol et
+  const [showQuiz, setShowQuiz] = useState(false);
   const [score, setScore] = useState([]);
   const [timer, setTimer] = useState(30);
   const [correctAnswers, setCorrectAnswers] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [answered, setAnswered] = useState(false);
 
-  useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
+  useEffect(() => async () => {
+    await axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
       const shuffledCorrectAnswers = res.data.slice(0, 10).map((q) => {
         return q.body
           .split(" ")
@@ -33,7 +33,7 @@ function Quiz() {
     if (timer > 0) {
       timerId = setTimeout(() => setTimer(timer - 1), 1000);
     } else {
-      if (!answered) {
+      if (!answered && !showScore) {
         setScore([...score, false]);
         setSelectedAnswers([...selectedAnswers, "No Answer"]);
       }
@@ -83,9 +83,9 @@ function Quiz() {
   };
 
   return (
-    <div className="app p-4 bg-gray-600 min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="p-4 bg-gray-600 min-h-screen flex items-center justify-center overflow-hidden">
       {!showQuiz ? (
-        <div className="start-quiz-section">
+        <div>
           <div
             className="card-shine-effect flex-col text-center flex gap-10 items-center justify-center"
             style={{ width: "700px", height: "400px" }}
@@ -104,7 +104,7 @@ function Quiz() {
         </div>
       ) : showScore ? (
         <div
-          className="score-section card-shine-effect text-white flex-col text-center items-center justify-center"
+          className="card-shine-effect text-white flex-col text-center items-center justify-center"
           style={{ width: "700px", height: "650px" }}
         >
           <div className="flex justify-between items-center">
@@ -132,7 +132,7 @@ function Quiz() {
               <tbody>
                 {score.map((s, i) => (
                   <tr key={i} className="">
-                    <td className="px-4 py-2">{i + 1}</td>
+                    <td className="px-4 py-2 text-lg">{i + 1}</td>
                     <td className="px-4 py-2">
                       {selectedAnswers[i] !== correctAnswers[i] ? (
                         <span className="rounded-full bg-red-600 text-md font-semibold py-1 px-4 text-white">
@@ -162,7 +162,7 @@ function Quiz() {
             className="question-section card-shine-effect flex-col items-center justify-center text-white"
             style={{ width: "700px", height: "600px" }}
           >
-            <div className="question-count mb-16 font-bold text-3xl flex justify-between">
+            <div className="question-count font-bold text-3xl flex justify-between">
               <span>
                 Question {currentQuestion + 1}/{questions.length}
               </span>
@@ -172,36 +172,38 @@ function Quiz() {
               </div>
             </div>
 
-            <div className="question-text font-semibold text-2xl border rounded-md p-2 mb-20">
-              {questions[currentQuestion]?.title}
-            </div>
-            <div className="answer-section flex-col flex">
-              {timer > 30
-                ? questions[currentQuestion]?.body
-                    .split(" ")
-                    .slice(0, 4)
-                    .map((answerOption, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleAnswerOptionClick(answerOption)}
-                        className="bg-transparent border-2 border-white rounded-md tracking-wide text-xl font-semibold text-white p-2 m-2 text cursor-not-allowed"
-                        disabled
-                      >
-                        {answerOption}
-                      </button>
-                    ))
-                : questions[currentQuestion]?.body
-                    .split(" ")
-                    .slice(0, 4)
-                    .map((answerOption, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleAnswerOptionClick(answerOption)}
-                        className="bg-white text-[#09090B] tracking-wide text-xl font-semibold rounded p-2 m-2 text hover:bg-slate-300"
-                      >
-                        {answerOption}
-                      </button>
-                    ))}
+            <div className="flex flex-col justify-between h-full py-12 ">
+              <div className="question-text font-semibold text-2xl border rounded-md p-2">
+                {questions[currentQuestion]?.title}
+              </div>
+              <div className="answer-section flex-col flex">
+                {timer > 30
+                  ? questions[currentQuestion]?.body
+                      .split(" ")
+                      .slice(0, 4)
+                      .map((answerOption, index) => (
+                        <button
+                          key={index}
+                          onClick={() => handleAnswerOptionClick(answerOption)}
+                          className="bg-transparent border-2 border-white rounded-md tracking-wide text-xl font-semibold text-white p-2 m-2 text cursor-not-allowed"
+                          disabled
+                        >
+                          {answerOption}
+                        </button>
+                      ))
+                  : questions[currentQuestion]?.body
+                      .split(" ")
+                      .slice(0, 4)
+                      .map((answerOption, index) => (
+                        <button
+                          key={index}
+                          onClick={() => handleAnswerOptionClick(answerOption)}
+                          className="bg-white text-[#09090B] tracking-wide text-xl font-semibold rounded p-2 m-2 text hover:bg-slate-300"
+                        >
+                          {answerOption}
+                        </button>
+                      ))}
+              </div>
             </div>
           </div>
         </>
