@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
-    "swiper": "^11.0.5",
+    "swiper": "^12.1.2",
     "vue": "^3.3.11"
   },
   "devDependencies": {
